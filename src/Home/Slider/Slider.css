@@ -1,0 +1,84 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+
+.slide {
+  position: relative;
+  width: 100%;
+  height: 80vh; 
+  padding: 0;
+  margin: 0;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff; 
+  text-align: center;
+  z-index: 1; 
+}
+
+.imagem-slider {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px; 
+}
+
+.slick-dots li button {
+  border: 1px solid #000; 
+  border-radius: 50%;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  padding: 3px;
+}
+
+.slick-dots li button:before {
+  content: none;
+  padding: 3px;
+}
+
+.slick-dots li.slick-active button {
+  background-color: #fff; 
+  padding: 3px;
+}
+
+.button-slider {
+  background-color: transparent;
+  border: 2px solid white;
+  color: #fff;
+  padding: 5px 10px;
+  transition: 0.4s;
+}
+
+.button-slider:hover {
+  background-color: #ba9970;
+}

@@ -1,0 +1,52 @@
+.why {
+    background-image: url("./src/assets/why-background.jpg");
+    color: #fff;
+}
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.bg {
+    background-color: #fff;
+    opacity: 0.8;
+}
+
+.bg span {
+    color: #000;
+    opacity: 1;
+}
+
+.items {
+    color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.item:hover {
+    transition: 0.4s;
+    background-color: #ba9970;
+}
+
+.item:hover .simbolo {
+    color: #fff;
+}
+
+.simbolo {
+    font-size: 4rem;
+    color: #ba9970;
+}
+
+.name {
+    font-weight: 500;
+    font-size: 17px;
+    width: 50%;
+}

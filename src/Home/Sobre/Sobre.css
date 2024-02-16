@@ -1,0 +1,57 @@
+span {
+    font-weight: 400;
+}
+
+h2 {
+    font-weight: 800;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+}
+
+.btn-sobre {
+    border: none;
+    outline: none;
+    background-color: #ba9970;
+    padding: 7px;
+    width: 30%;
+    color: #fff;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+.btn-sobre:hover {
+    background-color: #a38265;
+}
+
+.animated {
+    transition: opacity 500ms ease-out, transform 500ms ease-out;
+}
+
+@media (max-width: 1200px) { 
+    .d-flex{
+        flex-direction: column !important;
+        justify-content: start;
+    }
+
+    .btn-sobre {
+        margin-bottom: 20px;
+    }
+
+    .sobre {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .mobile-image {
+        width: 100%;
+    }
+
+    .btn-sobre {
+        width: 100%;
+        margin: 40px 0;
+    }
+}

@@ -1,0 +1,39 @@
+.form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.form-container {
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #a38265;
+    gap: 50px;
+}
+
+input, textarea {
+    font-size: 16px;
+    color: #fff;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    border-bottom: 2px solid #4c4c4c;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+.btn {
+    border: 2px solid #fff;
+}
+
+.btn:hover{
+    color: #000;
+    background-color: #fff;
+}

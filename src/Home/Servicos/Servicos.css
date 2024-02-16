@@ -1,0 +1,45 @@
+span {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.title {
+    text-align: center;
+}
+
+.name-service {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.servicos {
+    background-color: #ededed
+}
+
+.servico-item {
+    transition: 400ms;
+    cursor: pointer;
+}
+
+.servico-item:hover {
+    scale: 1.1;
+    color: #ba9970;
+}
+
+.balance {
+    font-size: 6rem;
+    color: #ba9970;
+    transition: 400ms;
+}
+
+.service-content:hover .balance {
+    color: #a38265;
+}
+
+.servico-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    width: 280px; 
+    margin: 0 60px; 
+}
