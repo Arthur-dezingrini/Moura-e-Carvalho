@@ -54,6 +54,7 @@ const Header = () => {
           <ul className={`menu-mobile-items ${isOpen ? "is-open" : ""}`}>
           <li><Link to="/" className={location.pathname === "/" ? "selected" : ""}>Home</Link></li>
           <li><Link to="/Servico" className={location.pathname === "./Servico" ? "selected" : ""}>Areas de atuação</Link></li>
+          <li><Link to="/Noticias" className={location.pathname === "/Noticias" ? "selected" : ""}>Noticias</Link></li> 
           <li><Link to="/Sobre" className={location.pathname === "/Sobre" ? "selected" : ""}>Sobre</Link></li>
           <li><Link to="/Contato" className={location.pathname === "/Contato" ? "selected" : ""}>Contato</Link></li>
             <li>

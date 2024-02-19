@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import Slide1 from '../../assets/Slides/Slider.jpg'
 import Slide2 from '../../assets/Slides/Slider2.jpg'
 import Slide3 from '../../assets/Slides/Slider3.jpg'
+import Logo2 from '../../assets/Logo-2.png'
 
 const MySlider = () => {
     const settings = {
@@ -23,7 +24,7 @@ const MySlider = () => {
         img: Slide1,
         content: (
           <div className='container d-flex flex-column justify-contenter-center align-items-center'>
-            <img src="./src/assets/Logo-2.png" alt="" width={100}/>
+            <img src={Logo2} alt="" width={100}/>
             <h1 className='roboto-thin'>Direito Trabalhista</h1>
             <Link to={'./Servico/trabalhista'}><button className='button-slider'>Saiba mais</button></Link>
           </div>
@@ -33,7 +34,7 @@ const MySlider = () => {
         img: Slide2,
         content: (
           <div className='container d-flex flex-column justify-contenter-center align-items-center'>
-            <img src="./src/assets/Logo-2.png" alt="" width={100}/>
+            <img src={Logo2} alt="" width={100}/>
             <h1>Direito Do Agronegocio</h1>
             <Link to={'./Servico/agronegocio'}><button className='button-slider'>Saiba mais</button></Link>
           </div>
@@ -44,7 +45,7 @@ const MySlider = () => {
         img: Slide3,
         content: (
           <div className='container d-flex flex-column justify-contenter-center align-items-center'>
-            <img src="./src/assets/Logo-2.png" alt="" width={100}/>
+            <img src={Logo2} alt="" width={100}/>
             <h1>Direito Bancario</h1>
             <Link to={'./Servico/bancario'}><button className='button-slider'>Saiba mais</button></Link>
           </div>
