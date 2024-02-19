@@ -1,5 +1,5 @@
 import ServicoHome from './ServicoHome';
-import './servicosHome.css'
+import './ServicosHome.css'
 import AnimatedComponent from '../../AnimatedComponent';
 
 const Servicos = () => {
