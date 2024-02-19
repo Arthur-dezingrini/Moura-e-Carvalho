@@ -3,9 +3,9 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import './Slider.css';
 import { Link } from 'react-router-dom';
-import Slide1 from '../../assets/Slides/slider.jpg'
-import Slide2 from '../../assets/Slides/slider2.jpg'
-import Slide3 from '../../assets/Slides/slider3.jpg'
+import Slide1 from '../../assets/Slides/Slider.jpg'
+import Slide2 from '../../assets/Slides/Slider2.jpg'
+import Slide3 from '../../assets/Slides/Slider3.jpg'
 
 const MySlider = () => {
     const settings = {
