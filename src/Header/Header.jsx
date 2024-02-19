@@ -20,7 +20,8 @@ const Header = () => {
   return (
     <header className='p-3 header'>
       <nav>
-        <ul animationType={'slideTop'} className={'menu-desktop container d-flex align-items-center'}>
+        <AnimatedComponent animationType={'slideTop'} className='w-100'>
+        <ul className={'menu-desktop container d-flex align-items-center'}>
           <li>
             <ul className='gap-5'>
               <li><Link to="/" className={location.pathname === "/" ? "selected" : ""}> <FaHouse style={{fontSize: '1.5rem'}}/> </Link></li>
@@ -60,6 +61,7 @@ const Header = () => {
             </li>
           </ul>
         </ul>
+        </AnimatedComponent>
       </nav>
     </header>
   );
