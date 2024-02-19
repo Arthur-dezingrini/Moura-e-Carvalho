@@ -1,5 +1,5 @@
 .why {
-    background-image: url("./src/assets/why-background.jpg");
+    background-image: url("../../assets/why-background.jpg");
     color: #fff;
 }
 
@@ -23,7 +23,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 }
 
 .item {
