@@ -23,8 +23,7 @@ const AnimatedComponent = ({ children, animationType, animationType2, ...rest })
   const props = useSpring({ 
     transform: getTransform(),
     from: { transform: animationType2 },
-    config: { duration: 700 },
-    config: { tension: 50, friction: 26 }
+    config: { duration: 700, tension: 50, friction: 26 },
   });
 
   return (
