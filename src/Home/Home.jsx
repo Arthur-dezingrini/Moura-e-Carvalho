@@ -5,6 +5,7 @@ import Why from './Why/Why';
 import Blog from './Blog/Blog';
 import Contato from './Contato/Contato'
 import Social from './Social/Social'
+import { Link } from 'react-router-dom';
 
 
 
@@ -16,7 +17,7 @@ const Home = () => {
             <div className='container d-flex flex-column justify-contenter-center align-items-center'>
               <img src="./src/assets/Logo-2.png" alt="" width={100}/>
               <h1 className='roboto-thin'>Direito Trabalhista</h1>
-              <button className='button-slider'>Saiba mais</button>
+              <Link to={'./Servico/trabalhista'}><button className='button-slider'>Saiba mais</button></Link>
             </div>
           ),
         },
@@ -25,8 +26,8 @@ const Home = () => {
           content: (
             <div className='container d-flex flex-column justify-contenter-center align-items-center'>
               <img src="./src/assets/Logo-2.png" alt="" width={100}/>
-              <h1>Direito Trabalhista</h1>
-              <button className='button-slider'>Saiba mais</button>
+              <h1>Direito Do Agronegocio</h1>
+              <Link to={'./Servico/agronegocio'}><button className='button-slider'>Saiba mais</button></Link>
             </div>
           ),
         },
@@ -36,8 +37,8 @@ const Home = () => {
           content: (
             <div className='container d-flex flex-column justify-contenter-center align-items-center'>
               <img src="./src/assets/Logo-2.png" alt="" width={100}/>
-              <h1>Direito Trabalhista</h1>
-              <button className='button-slider'>Saiba mais</button>
+              <h1>Direito Bancario</h1>
+              <Link to={'./Servico/bancario'}><button className='button-slider'>Saiba mais</button></Link>
             </div>
           ),
         },

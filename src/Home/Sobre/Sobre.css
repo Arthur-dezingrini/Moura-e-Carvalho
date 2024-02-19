@@ -12,12 +12,12 @@ p {
     font-weight: 600;
 }
 
+
 .btn-sobre {
     border: none;
     outline: none;
     background-color: #ba9970;
-    padding: 7px;
-    width: 30%;
+    padding: 15px;
     color: #fff;
     border-radius: 8px;
     transition: 0.4s;
@@ -31,27 +31,25 @@ p {
     transition: opacity 500ms ease-out, transform 500ms ease-out;
 }
 
-@media (max-width: 1200px) { 
+@media (max-width: 796px) { 
     .d-flex{
         flex-direction: column !important;
         justify-content: start;
     }
 
     .btn-sobre {
-        margin-bottom: 20px;
+        padding: 15px 25px;
+        width: 100%;
+        margin: 20px 0 40px 0;
+        color: #fff;
     }
 
     .sobre {
         margin: 0 auto;
-        width: 80%;
-    }
-
-    .mobile-image {
         width: 100%;
     }
 
-    .btn-sobre {
-        width: 100%;
-        margin: 40px 0;
+    .image-sobre {
+        width: 100% !important;
     }
 }

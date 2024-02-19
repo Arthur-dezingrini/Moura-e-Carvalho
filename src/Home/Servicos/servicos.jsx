@@ -1,15 +1,18 @@
-import Servico from './Servico';
+import ServicoHome from './ServicoHome';
 import './servicos.css'
+import AnimatedComponent from '../../AnimatedComponent';
 
 const Servicos = () => {
     return (
         <div className="pt-5 mt-5 pb-5 servicos">
-             <div className="container">
-                <div className="title">
-                    <h2>Nossos Serviços</h2>
+                <div className="container">
+                        <AnimatedComponent className='m-auto'>
+                            <h2> Nossos Serviços </h2>
+                        </AnimatedComponent>
+                        <div className='d-flex justify-content-center align-items-center'>
+                            <AnimatedComponent> <ServicoHome showDescription={false} ></ServicoHome></AnimatedComponent>
+                        </div>
                 </div>
-                <Servico showDescription={false} ></Servico>
-            </div>
         </div>
     );
 };

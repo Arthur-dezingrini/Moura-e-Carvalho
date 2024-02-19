@@ -4,11 +4,12 @@ import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
+import AnimatedComponent from '../../AnimatedComponent';
 
 
 const Social = () => {
     return (
-        <div className='container d-flex w-100 p-5'>
+        <AnimatedComponent className='container d-flex w-100 p-5'>
             <div className='contacts'>
                 <div className='individual-social'>
                     <FaPhoneAlt className='icon'></FaPhoneAlt>
@@ -25,14 +26,16 @@ const Social = () => {
                     </span>
                 </div>
                 <div className='individual-social'>
-                    <div className='d-flex align-items-center'>
+                    <div className='d-flex'>
+                        <div>
                         <FaFacebook className='icon'></FaFacebook>
                         <FiInstagram className='icon'></FiInstagram>
+                        </div>
                     </div>
                     <span>SIGA-NOS</span>
                 </div>
             </div>
-        </div>
+        </AnimatedComponent>
     )
 }
 

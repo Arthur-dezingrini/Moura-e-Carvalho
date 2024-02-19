@@ -1,25 +1,17 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link } from 'react-router-dom';
-import { FaInstagram } from "react-icons/fa6";
-import { RiFacebookCircleLine } from "react-icons/ri";
 import './Header.css';
 import { useState, useEffect  } from 'react';
-import { useSpring, animated } from 'react-spring';
+import { Link, useLocation } from 'react-router-dom';
+import { FaInstagram } from "react-icons/fa6";
+import { RiFacebookCircleLine } from "react-icons/ri";
 import { CiMenuBurger } from "react-icons/ci";
+import AnimatedComponent from '../AnimatedComponent';
+import { FaHouse } from "react-icons/fa6";
+
 
 const Header = () => {
-  const [showContent, setShowContent] = useState(false);
   const [isOpen, setIsOpen] = useState(true);
-
-  const animationProps = useSpring({
-    config: { duration: 500 },
-    opacity: showContent ? 1 : 0,
-    transform: showContent ? 'translateY(0)' : 'translateY(-100%)',
-  });
-
-  useEffect(() => {
-    setShowContent(true);
-  }, []);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -27,21 +19,23 @@ const Header = () => {
 
   return (
     <header className='p-3 header'>
-      <animated.nav style={animationProps} >
-        <ul className={'menu-desktop container d-flex align-items-center justify-content-evenly'}>
+      <nav>
+        <ul animationType={'slideTop'} className={'menu-desktop container d-flex align-items-center'}>
           <li>
-            <ul className='gap-6'>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/Atuacao">Areas de atuação</Link></li>
+            <ul className='gap-5'>
+              <li><Link to="/" className={location.pathname === "/" ? "selected" : ""}> <FaHouse style={{fontSize: '1.5rem'}}/> </Link></li>
+              <li><Link to="/Sobre" className={location.pathname === "/Sobre" ? "selected" : ""}>Sobre</Link></li>
+              <li><Link to="/Servico" className={location.pathname === "/Servico" ? "selected" : ""}>Areas de atuação</Link></li>
+              
             </ul>
           </li>
           <li>
             <img src="/src/assets/Logo.jpg" alt="" width={350}/>
           </li>
           <li>
-            <ul className='gap-6'>
-              <li><Link to="/sobre">Sobre</Link></li>
-              <li> <Link to="/Contato">Contato</Link></li>
+            <ul className='gap-5'>
+            <li><Link to="/Noticias" className={location.pathname === "/Noticias" ? "selected" : ""}>Noticias</Link></li> 
+            <li><Link to="/Contato" className={location.pathname === "/Contato" ? "selected" : ""}>Contato</Link></li>
             </ul>
           </li>
           <li className={`d-flex align-items-center social`}>
@@ -56,17 +50,17 @@ const Header = () => {
           </button>
           <img  src="/src/assets/Logo.jpg" alt="Logo" width={320}/>
           <ul className={`menu-mobile-items ${isOpen ? "is-open" : ""}`}>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/Atuacao">Areas de atuação</Link></li>
-            <li><Link to="/sobre">Sobre</Link></li>
-            <li> <Link to="/Contato">Contato</Link></li>
+          <li><Link to="/" className={location.pathname === "/" ? "selected" : ""}>Home</Link></li>
+          <li><Link to="/Servico" className={location.pathname === "./Servico" ? "selected" : ""}>Areas de atuação</Link></li>
+          <li><Link to="/Sobre" className={location.pathname === "/Sobre" ? "selected" : ""}>Sobre</Link></li>
+          <li><Link to="/Contato" className={location.pathname === "/Contato" ? "selected" : ""}>Contato</Link></li>
             <li>
               <a href=""><FaInstagram style={{ fontSize: '1.6em', marginRight: '2px' }}></FaInstagram></a> 
               <a href=""><RiFacebookCircleLine style={{ fontSize: '1.7em' }}></RiFacebookCircleLine></a> 
             </li>
           </ul>
         </ul>
-      </animated.nav>
+      </nav>
     </header>
   );
 }

@@ -8,3 +8,20 @@ a {
     color: #000;
     cursor: pointer;
  }
+
+ span {
+    font-weight: 400;
+ }
+
+ p {
+    color: #383838;
+    font-weight: 500;
+ }
+
+ .animated {
+   background-color: transparent;
+ }
+
+ ul, li {
+   list-style: none;
+ }

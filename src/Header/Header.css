@@ -49,6 +49,11 @@ a:hover {
     border-bottom: 3px solid #ba9970;
 }
 
+.selected {
+    color: #ba9970;
+}
+  
+
 @media (max-width: 1200px) { 
     .btn-menu-mobile {
         position: absolute;

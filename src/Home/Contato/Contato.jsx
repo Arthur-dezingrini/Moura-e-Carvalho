@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './Contato.css'
+import AnimatedComponent from '../../AnimatedComponent';
 
 export const Contato = () => {
   const form = useRef();
@@ -24,8 +25,10 @@ export const Contato = () => {
 
   return (
     <div className='d-flex'>
-        <img src="./src/assets/contato-imagem.jpeg" alt="Imagem"/>
-        <div className='form-container p-5'>
+        <AnimatedComponent animationType={'scale'}>
+          <img className='image-contato' src="./src/assets/contato-imagem.jpeg" alt="Imagem"/>
+        </AnimatedComponent>
+        <AnimatedComponent animationType={'scale'} className='form-container p-5 w-100'>
             <h1>Entre em contato </h1>
             <form className='d-flex flex-column gap-5 form' ref={form} onSubmit={sendEmail}>
                 <input type="text" name="user_name" placeholder='Nome'required/>
@@ -34,7 +37,7 @@ export const Contato = () => {
                 <textarea rows={2} name="message" placeholder='Digite sua mensagem'/>
                 <button className='btn' type="submit" required>Enviar</button>
             </form>
-        </div>
+        </AnimatedComponent>
     </div>
   );
 };

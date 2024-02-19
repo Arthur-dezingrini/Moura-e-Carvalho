@@ -1,0 +1,20 @@
+.description {
+    letter-spacing: 1px;
+}
+
+@media (max-width: 796px) {
+    .image-sobre {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .description{
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .card-individual {
+        width: 100% !important;
+    }
+}
