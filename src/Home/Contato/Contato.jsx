@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './Contato.css'
 import AnimatedComponent from '../../AnimatedComponent';
-import ImageContato from '../../assets/Contato-imagem.jpeg'
+import ImageContato from '../../assets/contato-imagem.jpeg'
 
 
 export const Contato = () => {
