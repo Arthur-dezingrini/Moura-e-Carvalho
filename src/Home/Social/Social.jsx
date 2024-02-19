@@ -27,7 +27,7 @@ const Social = () => {
                 </div>
                 <div className='individual-social'>
                     <div className='d-flex'>
-                        <div>
+                        <div className='d-flex social-mobile'>
                         <FaFacebook className='icon'></FaFacebook>
                         <FiInstagram className='icon'></FiInstagram>
                         </div>

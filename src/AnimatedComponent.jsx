@@ -15,6 +15,8 @@ const AnimatedComponent = ({ children, animationType, animationType2, ...rest })
         return inView ? 'translateY(0%)' : 'translateY(100%)';
       case 'slideRigth':
         return inView ? 'translateX(0%)' : 'translateX(100%)'
+      case 'opacity':
+        return inView ? 1 : 0;
       default:
         return inView ? 'translateX(0%)' : 'translateX(-100%)';
     }
@@ -23,7 +25,7 @@ const AnimatedComponent = ({ children, animationType, animationType2, ...rest })
   const props = useSpring({ 
     transform: getTransform(),
     from: { transform: animationType2 },
-    config: { duration: 700, tension: 50, friction: 26 },
+    config: { tension:90, friction: 50 },
   });
 
   return (

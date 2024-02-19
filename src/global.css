@@ -19,9 +19,12 @@ a {
  }
 
  .animated {
-   background-color: transparent;
- }
-
+   transition: opacity 500ms ease-out, transform 500ms ease-out;
+   top: 0;
+   left: 0;
+   right: 0;
+   background: transparent;
+}
  ul, li {
    list-style: none;
  }

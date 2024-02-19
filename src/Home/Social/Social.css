@@ -40,4 +40,9 @@
         flex-wrap: wrap;
         gap: 15px;
     }
+
+    .social-mobile {
+        display: block !important;
+        opacity: 1;
+    }
 }

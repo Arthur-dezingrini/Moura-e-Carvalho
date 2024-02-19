@@ -1,14 +1,15 @@
 import React from 'react';
 import './Sobre.css'
 import AnimatedComponent from '../AnimatedComponent';
+import Image from '../assets/Escritorio.jpeg'
 
 const Sobre = () => (
   <div className='container pt-5 pb-5'>
     <div className='d-flex gap-5'>
       <AnimatedComponent animationType={'scale'}>
-        <img className='image-sobre' src="./src/assets/Escritorio.jpeg" alt="Imagem" width={450}/>
+        <img className='image-sobre animated' src={Image} alt="Imagem" width={450}/>
       </AnimatedComponent>
-      <AnimatedComponent animationType={'slideBottom'} className='d-flex flex-column text-center gap-3'>
+      <AnimatedComponent animationType={'opacity'} className='d-flex flex-column text-center gap-3 animated'>
         <h2>Sobre Nós</h2>
           <div className='description d-flex align-items-end flex-column'>
             <span>Fundado em 2015, com foco de atuação nas demandas relativas à área trabalhista bancária, o escritório Moura Advogados, administrado e fundado pela Drª Valdéris Ott de Moura, trilhou um caminho de sucesso, sempre com olhos voltados para a evolução dos serviços e identificando a necessidade de uma advocacia personalizada.

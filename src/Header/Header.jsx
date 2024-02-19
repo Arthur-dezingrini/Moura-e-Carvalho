@@ -7,6 +7,7 @@ import { RiFacebookCircleLine } from "react-icons/ri";
 import { CiMenuBurger } from "react-icons/ci";
 import AnimatedComponent from '../AnimatedComponent';
 import { FaHouse } from "react-icons/fa6";
+import Logo from '../assets/Logo.jpg'
 
 
 const Header = () => {
@@ -31,7 +32,7 @@ const Header = () => {
             </ul>
           </li>
           <li>
-            <img src="/src/assets/Logo.jpg" alt="" width={350}/>
+            <img src={Logo} alt="Logo" width={350}/>
           </li>
           <li>
             <ul className='gap-5'>
@@ -49,7 +50,7 @@ const Header = () => {
           <button className='btn-menu-mobile' onClick={toggleMenu}>
             <CiMenuBurger></CiMenuBurger>
           </button>
-          <img  src="/src/assets/Logo.jpg" alt="Logo" width={320}/>
+          <img  src={Logo} alt="Logo" width={320}/>
           <ul className={`menu-mobile-items ${isOpen ? "is-open" : ""}`}>
           <li><Link to="/" className={location.pathname === "/" ? "selected" : ""}>Home</Link></li>
           <li><Link to="/Servico" className={location.pathname === "./Servico" ? "selected" : ""}>Areas de atuação</Link></li>

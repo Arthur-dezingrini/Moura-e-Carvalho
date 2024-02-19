@@ -25,14 +25,6 @@ a:hover {
     color: #ba9970;
 }
 
-.animated {
-    transition: opacity 500ms ease-out, transform 500ms ease-out;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: white;
-}
-
 .btn-menu-mobile {
     display: none;
 }

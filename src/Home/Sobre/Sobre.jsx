@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedComponent from '../../AnimatedComponent'; 
+import ImageSobre from '../../assets/Escritorio.jpeg'
 
 import "./Sobre.css"
 
@@ -29,7 +30,7 @@ const Sobre = () => {
                     </AnimatedComponent>
                     <AnimatedComponent animationType2='scale(0)' animationType={'scale'}>
                         <div>
-                            <img className  ="image-sobre" src="./src/assets/Escritorio.jpeg" alt="Imagem" width={450}/>
+                            <img className="image-sobre" src={ImageSobre} alt="Imagem" width={450}/>
                         </div>
                     </AnimatedComponent>
                 </div>
