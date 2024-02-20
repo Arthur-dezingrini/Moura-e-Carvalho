@@ -17,19 +17,19 @@ const App = () => {
 
   return (
     <Router>
-      <Header />
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/Sobre" element={<Sobre />} />
-        <Route exact path="/Servico" element={<Servico/>} />
-        <Route exact path="/Contato" element={<Contato/>} />
-        <Route exact path="/servico/trabalhista" element={<Trabalhista />} />
-        <Route exact path="/servico/agronegocio" element={<Agronegocio />} />
-        <Route exact path="/servico/bancario" element={<Bancario />} />
-        <Route path="/Noticias" element={<NewsList/>} />
-        <Route path="/Noticias/:id" element={<NewsDetails />} />
-      </Routes>
-      <Footer />
+        <Header />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/Sobre" element={<Sobre />} />
+          <Route exact path="/Servico" element={<Servico/>} />
+          <Route exact path="/Contato" element={<Contato/>} />
+          <Route exact path="/servico/trabalhista" element={<Trabalhista />} />
+          <Route exact path="/servico/agronegocio" element={<Agronegocio />} />
+          <Route exact path="/servico/bancario" element={<Bancario />} />
+          <Route path="/Noticias" element={<NewsList/>} />
+          <Route path="/Noticias/:id" element={<NewsDetails />} />
+        </Routes>
+        <Footer />
     </Router>
   );
 }

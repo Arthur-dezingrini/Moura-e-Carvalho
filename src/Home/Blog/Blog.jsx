@@ -14,7 +14,7 @@ const Blog = () => {
             <h1 className='mb-5'>Noticias</h1>
             <div className="card-deck d-flex justify-content-around gap-5">
                 {cards.map((card, index) => (
-                    <AnimatedComponent animationType={'slideBottom'} key={index} className="card">
+                    <AnimatedComponent animationType={''} key={index} className="card">
                         <img className="card-img-top" src={card.img} alt="Card cap" />
                         <div className="card-body d-flex flex-column">
                             <h3 className="card-title">{card.title}</h3>

@@ -1,6 +1,8 @@
 .footer {
-    color: #fff;
-    background-color: #a38265;
+  width: 100%;
+  background-color:#a38265;
+  padding: 20px;
+  margin-top: auto;
 }
 
 .whatsapp-link {
