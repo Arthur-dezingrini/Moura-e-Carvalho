@@ -13,16 +13,16 @@ const Social = () => {
             <div className='contacts'>
                 <div className='individual-social'>
                     <FaPhoneAlt className='icon'></FaPhoneAlt>
-                    <span>(31) 3564-5231</span>
+                    <span>(62) 99270-6106 </span>
                 </div>
                 <div  className='individual-social'>
                     <MdEmail className='icon'></MdEmail>
-                    <span>contato@mouraa.com.br</span>
+                    <span>contato@vmec.adv.br</span>
                 </div>
                 <div  className='individual-social'>
                     <FaLocationDot className='icon'></FaLocationDot>
                     <span>
-                        Rua Paracatu, nº 1154, Salas 715/716, 7º Andar Bairro Santo Agostinho - CEP: 30180-098 | Belo Horizonte/MG
+                    Av. Deputado Jamel Cecílio, Nº 2496, Sala B 153, Ed. New Business Style, Jardim Goiás, Goiânia - Go | CEP: 74.810-100
                     </span>
                 </div>
                 <div className='individual-social'>

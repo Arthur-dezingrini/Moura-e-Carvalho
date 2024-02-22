@@ -46,7 +46,7 @@ a:hover {
 }
   
 
-@media (max-width: 1200px) { 
+@media (max-width: 995px) { 
     .btn-menu-mobile {
         position: absolute;
         left: 0;
