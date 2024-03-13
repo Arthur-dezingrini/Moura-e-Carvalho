@@ -2,6 +2,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import './Contato.css'
 import AnimatedComponent from "../AnimatedComponent";
+import { MdEmail } from "react-icons/md";
 
 import { useRef } from "react";
 
@@ -52,6 +53,10 @@ const Contato = () => {
                                 <div className="d-flex gap-3 ms-4 align-items-center justify-content-start contato-individual">
                                     <FaLocationDot className="icon-contato-location icon-contato"/>
                                     <p>Av. Deputado Jamel Cecílio, Nº 2496, Sala B 153, Ed. New Business Style, Jardim Goiás, Goiânia - Go | CEP: 74.810-100</p>
+                                </div>
+                                <div className="d-flex gap-3 ms-4 align-items-center justify-content-start contato-individual">
+                                    <MdEmail className="icon-contato-location icon-contato"/>
+                                    <p>contato@vmec.adv.br</p>
                                 </div>
                             </div>
                         </div>
