@@ -1,5 +1,5 @@
 import './Social.css'
-import { FaPhoneAlt } from "react-icons/fa";
+import Telefone from "../../assets/Telefone.png"
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
@@ -12,7 +12,7 @@ const Social = () => {
         <AnimatedComponent className='container d-flex w-100 p-5'>
             <div className='contacts'>
                 <div className='individual-social pt-2 gap-3'>
-                    <img src='./src/assets/Telefone.png' className='icon2' width={45}></img>
+                    <img src={Telefone} className='icon2' width={45}></img>
                     <span>(62) 99270-6106 </span>
                 </div>
                 <div  className='individual-social'>

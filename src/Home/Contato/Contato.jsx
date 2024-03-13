@@ -27,7 +27,7 @@ export const Contato = () => {
 
   return (
     <div className='d-flex'>
-        <AnimatedComponent className='w-75' animationType={'scale'}>
+        <AnimatedComponent className='w-100' animationType={'scale'}>
           <img src={ImageContato} className='w-100' alt="Imagem"/>
         </AnimatedComponent>
         <AnimatedComponent animationType={'scale'} className='form-container p-5 w-100'>
