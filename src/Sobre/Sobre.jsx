@@ -1,13 +1,13 @@
 import React from 'react';
 import './Sobre.css'
 import AnimatedComponent from '../AnimatedComponent';
-import Image from '../assets/Escritorio.jpeg'
+
 
 const Sobre = () => (
   <div className='container pt-5 pb-5'>
     <div className='d-flex gap-5'>
       <AnimatedComponent animationType={'scale'}>
-        <img className='image-sobre animated' src={Image} alt="Imagem" width={450}/>
+        <img className='image-sobre animated' alt="Imagem" width={450}/>
       </AnimatedComponent>
       <AnimatedComponent animationType={'opacity'} className='d-flex flex-column text-center gap-3 animated'>
         <h2>Sobre Nós</h2>

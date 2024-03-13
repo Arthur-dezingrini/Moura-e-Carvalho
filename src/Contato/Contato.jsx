@@ -8,8 +8,7 @@ import { useRef } from "react";
 const Contato = () => {
 
     const Contatos = [
-        {location: 'Matriz - Goiania/GO', phone: '(62)99270-6106 / (62)98173-6310  / (62)3642-2328', endereço: 'Av. Deputado Jamel Cecílio, Nº 2496, Sala B 153, Ed. New Business Style, Jardim Goiás, Goiânia - Go | CEP: 74.810-100'},
-        {location: 'Brasilia/DF', phone: '(31) 9 9523-2325', endereço: 'Brasília - Centro Empresarial Varig, Setor Comercial Norte, 12º andar, Quadra 4, Bloco B, 100, Asa Norte 70, Brasília - DF, 70714-900'},
+        {location: 'Brasilia/DF', phone: null, endereço: 'Brasília - Centro Empresarial Varig, Setor Comercial Norte, 12º andar, Quadra 4, Bloco B, 100, Asa Norte 70, Brasília - DF, 70714-900'},
         {location: 'Belo Horizonte/MG', phone: '(31) 9 7252-3131', endereço: 'Belo Horizonte - R. Paraíba, 550 - 8º Ed. Renaissance Work Center - Savassi, Belo Horizonte -   MG, 30130-140'},
         {location: 'São Paulo/SP', phone: '(31) 9 7252-3131', endereço: 'Belo Horizonte - R. Paraíba, 550 - 8º Ed. Renaissance Work Center - Savassi, Belo Horizonte -   MG, 30130-140'},
         {location: 'Rio De Janeiro/RJ', phone: '(31) 9 7252-3131', endereço: 'Belo Horizonte - R. Paraíba, 550 - 8º Ed. Renaissance Work Center - Savassi, Belo Horizonte -   MG, 30130-140'},
@@ -43,14 +42,26 @@ const Contato = () => {
                     <span>Para um melhor relacionamento com nossos clientes, concentramos nossa equipe operacional em nossa matriz.</span>
                 </div>
                 <div className="pb-5">   
+                        <div className="d-flex w-75 m-auto">
+                            <div className="mb-2 gap-2 d-flex flex-column contato">
+                                <h3 className="title-contato"> Matriz - Goiania/GO</h3>
+                                <div className="d-flex gap-3 ms-4 align-items-center justify-content-start contato-individual">
+                                    <FaPhoneAlt className="icon-contato-location icon-contato"></FaPhoneAlt>
+                                    <p>(62)99270-6106 / (62)98173-6310  / (62)3642-2328</p>
+                                </div>
+                                <div className="d-flex gap-3 ms-4 align-items-center justify-content-start contato-individual">
+                                    <FaLocationDot className="icon-contato-location icon-contato"/>
+                                    <p>Av. Deputado Jamel Cecílio, Nº 2496, Sala B 153, Ed. New Business Style, Jardim Goiás, Goiânia - Go | CEP: 74.810-100</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+                <div className="pb-5">   
                     {Contatos.map((contato, index) => (
                         <div className="d-flex w-75 m-auto" key={index}>
                             <div className="mb-2 gap-2 d-flex flex-column contato">
                                 <h3 className="title-contato"> {contato.location} </h3>
-                                <div className="d-flex gap-3 ms-4 align-items-start contato-individual">
-                                    <FaPhoneAlt className="icon-contato"/>
-                                    <p>{contato.phone}</p> 
-                                </div>
                                 <div className="d-flex gap-3 ms-4 align-items-center justify-content-start contato-individual">
                                     <FaLocationDot className="icon-contato-location icon-contato"/>
                                     <p>{contato.endereço}</p>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedComponent from '../../AnimatedComponent'; 
-import ImageSobre from '../../assets/Escritorio.jpeg'
+import Equipe from '../../assets/Equipe.jpg'
 
 import "./Sobre.css"
 
@@ -14,8 +14,8 @@ const Sobre = () => {
     };
 
     return (
-        <div className="container d-flex p-5">
-                <div className='d-flex'>
+        <div className="container p-5">
+                <div className='d-flex justify-content-center align-items-center'>
                     <AnimatedComponent>
                     <div className="d-flex flex-column gap-3 sobre me-5">
                         <p>CONHEÇA A</p>
@@ -28,13 +28,12 @@ const Sobre = () => {
                         <Link to="/sobre"><button onClick={handleButtonClick} className="btn-sobre">Saiba mais</button></Link>
                     </div>
                     </AnimatedComponent>
-                    <AnimatedComponent animationType2='scale(0)' animationType={'scale'}>
+                    <AnimatedComponent animationType2='scale(0.7)' animationType={'scale'}>
                         <div>
-                            <img className="image-sobre" src={ImageSobre} alt="Imagem" width={450}/>
+                            <img className="image-sobre" src={Equipe} alt="Imagem" width={560}/>
                         </div>
                     </AnimatedComponent>
                 </div>
-
         </div>
     );
 }

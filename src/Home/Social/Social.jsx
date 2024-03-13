@@ -11,8 +11,8 @@ const Social = () => {
     return (
         <AnimatedComponent className='container d-flex w-100 p-5'>
             <div className='contacts'>
-                <div className='individual-social'>
-                    <FaPhoneAlt className='icon'></FaPhoneAlt>
+                <div className='individual-social pt-2 gap-3'>
+                    <img src='./src/assets/Telefone.png' className='icon2' width={45}></img>
                     <span>(62) 99270-6106 </span>
                 </div>
                 <div  className='individual-social'>

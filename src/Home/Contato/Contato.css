@@ -29,6 +29,10 @@ input, textarea {
     color: #fff;
 }
 
+.image-contato {
+    width: 60%;
+}
+
 .btn {
     border: 2px solid #fff;
     color: #fff;

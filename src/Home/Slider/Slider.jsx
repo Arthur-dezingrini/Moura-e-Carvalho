@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import './Slider.css';
 import { Link } from 'react-router-dom';
-import Slide1 from '../../assets/Slides/Slider.jpg'
+import Slide1 from '../../assets/Slides/Slider.png'
 import Slide2 from '../../assets/Slides/Slider2.jpg'
 import Slide3 from '../../assets/Slides/Slider3.jpg'
 import Logo2 from '../../assets/Logo-2.png'
@@ -23,7 +23,7 @@ const MySlider = () => {
       {
         img: Slide1,
         content: (
-          <div className='container d-flex flex-column justify-contenter-center align-items-center'>
+          <div className='d-flex flex-column align-items-center'>
             <img src={Logo2} alt="" width={100}/>
             <h1 className='roboto-thin'>Direito Trabalhista</h1>
             <Link to={'./Servico/trabalhista'}><button className='button-slider'>Saiba mais</button></Link>
@@ -35,7 +35,7 @@ const MySlider = () => {
         content: (
           <div className='container d-flex flex-column justify-contenter-center align-items-center'>
             <img src={Logo2} alt="" width={100}/>
-            <h1>Direito Do Agronegocio</h1>
+            <h1>Direito Do <br /> Agronegocio</h1>
             <Link to={'./Servico/agronegocio'}><button className='button-slider'>Saiba mais</button></Link>
           </div>
         ),
@@ -58,7 +58,7 @@ const MySlider = () => {
           <Slider {...settings}>
             {slides.map((slide, index) => (
               <div key={index} className='slide'>
-                <div className="image-overlay" style={{ backgroundImage: `url(${slide.img})`}} />
+                <div className="image-overlay h-100" style={{ backgroundImage: `url(${slide.img})`}} />
                 <div className="content"> {slide.content}</div>
               </div>
             ))}

@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './Contato.css'
 import AnimatedComponent from '../../AnimatedComponent';
-import ImageContato from '../../assets/contato-imagem.jpeg'
+import ImageContato from '../../assets/contato-imagem.jpg'
 
 
 export const Contato = () => {
@@ -27,8 +27,8 @@ export const Contato = () => {
 
   return (
     <div className='d-flex'>
-        <AnimatedComponent animationType={'scale'}>
-          <img className='image-contato' src={ImageContato} alt="Imagem"/>
+        <AnimatedComponent className='w-75' animationType={'scale'}>
+          <img src={ImageContato} className='w-100' alt="Imagem"/>
         </AnimatedComponent>
         <AnimatedComponent animationType={'scale'} className='form-container p-5 w-100'>
             <h1>Entre em contato </h1>

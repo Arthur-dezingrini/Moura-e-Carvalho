@@ -1,6 +1,8 @@
 .why {
-    background-image: url("../../assets/why-background.jpg");
+    background-image: url("../../assets/why-background.png");
     color: #fff;
+    background-size: cover;
+    background-position-y: 95%;
 }
 
 .container {
