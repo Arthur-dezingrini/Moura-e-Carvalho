@@ -13,7 +13,7 @@ const Social = () => {
             <div className='contacts'>
                 <div className='individual-social pt-2 gap-3'>
                     <img src={Telefone} className='icon2' width={45}></img>
-                    <span>(62) 99270-6106 </span>
+                    <span>(62) 99270-6106 / (62)3642-2328 </span>
                 </div>
                 <div  className='individual-social'>
                     <MdEmail className='icon'></MdEmail>

@@ -11,43 +11,40 @@ const Trabalhista = () => {
              <div className="container p-5">
                 <div className='d-flex flex-column gap-4'>
                     <h3>DIREITO TRABALHISTA</h3>
-                    <span>Ao longo dos anos, as instituições bancárias vêm passando por inúmeras mudanças, entre privatizações, incorporações, fusões, reestruturações, abalando o cotidiano dos bancários, que sofrem pressões psicológicas, carga excessiva de trabalho e sobrejornada, acarretando consequências muitas vezes irreparáveis.</span>
-                    <span>Visando resguardar e pleitear os direitos suprimidos, possuímos profissionais capacitados para orientá-los e esclarecer dúvidas quanto ao contrato de trabalho, ativo ou rescindido.</span>
-                    <p>Dentre os direitos dos bancários, podemos destacar:</p>
+                    <span>Defendo o direito dos trabalhadores, em especial a grandes grupos varejistas, somos especialista, buscando suprimir direitos que foram suprimidos durante o contrato de trabalho.</span>
+                    <p>podemos destacar os principais pedidos:</p>
                 </div>
                 <ul className="d-flex flex-column gap-3 mt-5 list">
                     <li>
-                        <FaCheck className='icon-contato'/> <span>Horas extras;</span>
+                        <FaCheck className='icon-contato'/> <span>Recalculo de verbas rescisorias;</span>
                     </li>
                     <li>
-                        <FaCheck  className='icon-contato'/>  <span>Horas extras pela supressão parcial ou integral do intervalo de almoço;</span>
+                        <FaCheck  className='icon-contato'/>  <span>Horas extras;</span>
                     </li>
                     <li>
-                        <FaCheck  className='icon-contato'/> <span>Acúmulo de funções;</span>
+                        <FaCheck  className='icon-contato'/> <span>Intervalo para almoço e descanso;</span>
                     </li>
                     <li>
-                        <FaCheck  className='icon-contato'/>  <span>Desvio de Função;</span>
+                        <FaCheck  className='icon-contato'/>  <span>Acumulo de função;</span>
                     </li>
                     <li>
-                        <FaCheck  className='icon-contato'/>  <span>Dano moral por cobrança abusiva de metas;</span>
+                        <FaCheck  className='icon-contato'/>  <span>Pagamento de comissões;</span>
                     </li>
                     <li>
-                        <FaCheck  className='icon-contato'/>  <span>Danos morais e materiais por acidente do trabalho;</span>
+                        <FaCheck  className='icon-contato'/>  <span>Danos morais por assedio;</span>
                     </li>
                     <li>
-                        <FaCheck  className='icon-contato'/>  <span>Lucros cessantes pela perda da capacidade (parcial ou total) laborativa;</span>
+                        <FaCheck  className='icon-contato'/>  <span>Danos morais por venda casada;</span>
                     </li>
                     <li>
-                        <FaCheck  className='icon-contato'/>  <span>Adicional de Periculosidade;</span>
+                        <FaCheck  className='icon-contato'/>  <span>Desfio de função;</span>
                     </li>
                     <li>
-                        <FaCheck  className='icon-contato'/>  <span>Adicional de Insalubridade;</span>
+                        <FaCheck  className='icon-contato'/>  <span>Adicional de insalubridade;</span>
                     </li>
                     <li>
-                        <FaCheck  className='icon-contato'/>  <span>Diferenças de Verbas Rescisórias;</span>
+                        <FaCheck  className='icon-contato'/>  <span>Adicional de periculosidade;</span>
                     </li>
-
-                    
                 </ul>
             </div>
         </div>

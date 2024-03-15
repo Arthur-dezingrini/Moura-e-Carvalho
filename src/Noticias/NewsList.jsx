@@ -5,7 +5,7 @@ import './Noticias.css'
 const NewsList = () => {
   return (
     <div className='container p-5 d-flex flex-column gap-5 main-content'>
-      <h2 className='title'>Ultimas Noticias</h2>
+      <h2 className='title'>Ultimos Depoimentos</h2>
       <ul className='d-flex flex-wrap gap-5'>
         {newsData.map(newsItem => (
           <li key={newsItem.id} className='card d-flex flex-column w-25 notice-mobile'>

@@ -15,8 +15,6 @@ const AnimatedComponent = ({ children, animationType, animationType2, ...rest })
         return inView ? 'translateY(0%)' : 'translateY(100%)';
       case 'slideRigth':
         return inView ? 'translateX(0%)' : 'translateX(100%)'
-      case 'opacity':
-        return inView ? 1 : 0;
       default:
         return inView ? 'translateX(0%)' : 'translateX(-100%)';
     }

@@ -24,11 +24,11 @@
     color: #000;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .item {
     justify-content: center;
+    width: 260px;
     border-radius: 8px;
 }
 
@@ -48,8 +48,9 @@
 
 .name {
     font-weight: 500;
-    font-size: 17px;
+    font-size: 18px;
     width: 50%;
+    text-align: center;
 }
 
 .bg-dark span{

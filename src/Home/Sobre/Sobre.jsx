@@ -19,7 +19,7 @@ const Sobre = () => {
                     <AnimatedComponent>
                     <div className="d-flex flex-column gap-3 sobre me-5">
                         <p>CONHEÇA A</p>
-                        <h2>Valderis Moura e Carvalho</h2>
+                        <h2>Valdéris Moüra & Carvalho advogados</h2>
                         <div className="d-flex flex-column gap-3">
                             <span>Fundado em 2015, com foco de atuação nas demandas relativas à área trabalhista bancária, o escritório Moura Advogados, administrado e fundado pela Drª Valdéris Ott de Moura, trilhou um caminho de sucesso, sempre com olhos voltados para a evolução dos serviços e identificando a necessidade de uma advocacia personalizada.</span>
                             <span>Logrando êxito em inúmeras ações do ramo, tornou-se referência em todo o Estado de Goiás.</span>
@@ -30,7 +30,7 @@ const Sobre = () => {
                     </AnimatedComponent>
                     <AnimatedComponent animationType2='scale(0.7)' animationType={'scale'}>
                         <div>
-                            <img className="image-sobre" src={Equipe} alt="Imagem" width={560}/>
+                            <img className="image-sobre" src={Equipe} alt="Imagem" width={580}/>
                         </div>
                     </AnimatedComponent>
                 </div>
