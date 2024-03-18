@@ -57,7 +57,7 @@ const MySlider = () => {
       <div >
           <Slider {...settings}>
             {slides.map((slide, index) => (
-              <div key={index} className='slide'>
+              <div key={index} className='slide'> 
                 <div className="image-overlay h-100" style={{ backgroundImage: `url(${slide.img})`}} />
                 <div className="content"> {slide.content}</div>
               </div>

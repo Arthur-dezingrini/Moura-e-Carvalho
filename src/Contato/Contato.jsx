@@ -3,6 +3,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import './Contato.css'
 import AnimatedComponent from "../AnimatedComponent";
 import { MdEmail } from "react-icons/md";
+import emailjs from 'emailjs-com';
 
 import { useRef } from "react";
 
@@ -16,25 +17,27 @@ const Contato = () => {
         {location: 'João Pessoa/PB', phone: '(31) 9 7252-3131', endereço: 'Belo Horizonte - R. Paraíba, 550 - 8º Ed. Renaissance Work Center - Savassi, Belo Horizonte -   MG, 30130-140'},
     ]
 
-    const form = useRef();
-
-    const sendEmail = (e) => {
-      e.preventDefault();
-  
-      emailjs
-        .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
-          publicKey: 'YOUR_PUBLIC_KEY',
-        })
-        .then(
-          () => {
+    
+    const sendEmail = (e => {
+        e.preventDefault();
+    
+        emailjs.sendForm(
+         'service_931rtm2', 
+         'template_qrt2t1c', 
+         e.target, 
+         '0v_ZALNIMQO5kz_Vt'
+        )
+        .then((result) => {
             alert("Mensagem enviada com sucesso")
-          },
-          (error) => {
-            alert("Algo deu errado, tente novamente mais tarde")
-          },
-        );
-    };
+            window.location.relaoad()
+          }, (error) => {
+        alert("Erro ao enviar mensagem, tente novamente mais tarde")
+        window.location.relaoad()
+        });
+    }) 
+       
   
+
     return (
         <div className="d-flex">
             <AnimatedComponent className="w-100 d-flex flex-column contatos ">
@@ -81,12 +84,12 @@ const Contato = () => {
             <div className='d-flex w-75 form-contato'>
                 <div className='form-container p-5'>
                     <h1>Entre em contato </h1>
-                    <form className='d-flex flex-column gap-5 form' ref={form} onSubmit={sendEmail}>
+                    <form className='d-flex flex-column gap-5 form' onSubmit={sendEmail}>
                         <input type="text" name="user_name" placeholder='Nome'required/>
                         <input type="email" name="user_email" placeholder='Email'required/>
-                        <input type="text" name="user_assunto" placeholder='Assunto'required/>
+                        <input type="text" name="assunto" placeholder='Assunto'required/>
                         <textarea rows={2} name="message" placeholder='Digite sua mensagem'/>
-                        <button className='btn' type="submit" required>Enviar</button>
+                        <button className='btn' type="submit" value="send">Enviar</button>
                     </form>
                 </div>
             </div>

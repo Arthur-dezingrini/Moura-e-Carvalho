@@ -9,7 +9,7 @@ const Servico = () => {
                 <h1>Áreas de Atuação</h1>
                 <span>Conheça as soluções jurídicas que podemos oferecer a você e/ou sua empresa.</span>
             </AnimatedComponent>
-            <div  className=" flex-wrap d-flex pb-5 animated">
+            <div  className=" flex-wrap d-flex pb-5 animated mt-5 pt-4">
                 <AnimatedComponent animationType={'scale'}> <ServicoHome showDescription={true} /> </AnimatedComponent>
             </div>
         </div>

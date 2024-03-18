@@ -28,8 +28,8 @@ const Social = () => {
                 <div className='individual-social'>
                     <div className='d-flex'>
                         <div className='d-flex social-mobile'>
-                        <FaFacebook className='icon'></FaFacebook>
-                        <FiInstagram className='icon'></FiInstagram>
+                        <a><FaFacebook className='icon'></FaFacebook></a>
+                        <a href="https://www.instagram.com/vmecadvogados/"><FiInstagram className='icon'></FiInstagram></a>
                         </div>
                     </div>
                     <span>SIGA-NOS</span>

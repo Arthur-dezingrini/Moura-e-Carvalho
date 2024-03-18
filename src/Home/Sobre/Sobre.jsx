@@ -28,9 +28,9 @@ const Sobre = () => {
                         <Link to="/sobre"><button onClick={handleButtonClick} className="btn-sobre">Saiba mais</button></Link>
                     </div>
                     </AnimatedComponent>
-                    <AnimatedComponent animationType2='scale(0.7)' animationType={'scale'}>
+                    <AnimatedComponent animationType2='scale(0.1)' animationType={'scale'}>
                         <div>
-                            <img className="image-sobre" src={Equipe} alt="Imagem" width={580}/>
+                            <img className="image-sobre" src={Equipe} alt="Imagem"/>
                         </div>
                     </AnimatedComponent>
                 </div>

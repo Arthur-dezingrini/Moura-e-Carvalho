@@ -41,7 +41,7 @@ const Header = () => {
             </ul>
           </li>
           <li className={`d-flex align-items-center social`}>
-              <a href=""><FaInstagram style={{ fontSize: '1.6em', marginRight: '2px' }}></FaInstagram></a>
+              <a href="https://www.instagram.com/vmecadvogados/"><FaInstagram style={{ fontSize: '1.6em', marginRight: '2px' }}></FaInstagram></a>
               <a href=""><RiFacebookCircleLine style={{ fontSize: '1.7em' }}></RiFacebookCircleLine></a>
           </li>
         </ul>
@@ -58,7 +58,7 @@ const Header = () => {
           <li><Link to="/Sobre" className={location.pathname === "/Sobre" ? "selected" : ""}>Sobre</Link></li>
           <li><Link to="/Contato" className={location.pathname === "/Contato" ? "selected" : ""}>Contato</Link></li>
             <li>
-              <a href=""><FaInstagram style={{ fontSize: '1.6em', marginRight: '2px' }}></FaInstagram></a> 
+              <a href="https://www.instagram.com/vmecadvogados/" target="_blank"><FaInstagram style={{ fontSize: '1.6em', marginRight: '2px' }}></FaInstagram></a> 
               <a href=""><RiFacebookCircleLine style={{ fontSize: '1.7em' }}></RiFacebookCircleLine></a> 
             </li>
           </ul>

@@ -43,8 +43,12 @@ span {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column; 
-    width: 250px; 
+    width: 250px;
     margin: 0 60px; 
+}
+
+.description-service {
+    font-size: 15px;
 }
 
 @media (max-width: 796px) {
