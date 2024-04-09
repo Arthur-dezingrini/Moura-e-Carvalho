@@ -13,14 +13,13 @@ const Sobre = () => (
         <h2>Sobre Nós</h2>
           <div className='d-flex text-start flex-column gap-3'>
             <span>
-              Dra. Valderis Ott de Moura advogada de formação e militância voltada para a areia trabalhista bancaria, com mais de 21 anos de vasta experiencia e atuação em vários estados da federação, pós-graduada em gestão de pessoas, liderança e coaching pela pontifícia Universidade Católica do Rio Grande Do Sul, pós-graduada em direito empresarial pela Fundação Getúlio Vargas Goiânia e pós-graduanda em direito ambiental e gestão estratégica de sustentabilidade, pela Pontifícia Universidade Católica de São Paulo.
+              Dr.ª Valdéris Ott de Moura, advogada de formação e militância voltada para a área trabalhista bancária, com mais de 21 anos de vasta experiencia e atuação em vários estados da federação. Pós-graduada em gestão de pessoas, liderança e coaching pela pontifícia Universidade Católica do Rio Grande Do Sul, pós-graduada em direito empresarial pela Fundação Getúlio Vargas Goiânia e pós-graduanda em direito ambiental e gestão estratégica de sustentabilidade, pela Pontifícia Universidade Católica de São Paulo.
             </span>
             <span>
-              Dr. Thiago Junior Carvalho advogado trabalhista há mais de 10 anos, com atuação em diversos estados da federação. Graduado em direto pela Universidade Salgado de Oliveira e pós-graduando em Direito e Processo do Trabalho, pela Universidade Federal de Goiás.
+              Dr. Thiago Júnio Carvalho, advogado trabalhista há mais de 10 anos, com atuação em diversos estados da federação, em especial com direito trabalhista bancário. Graduado em direto pela Universidade Salgado de Oliveira e pós-graduando em Direito e Processo do Trabalho, pela Universidade Federal de Goiás.            
             </span>
             <span>
-            O escritório Valderis Moura & Carvalho, foi fundada final de 2023, com a junção de dois perfis totalmente diferentes, com o intuito de prestar uma advocacia de excelência. Em projeto de expansão, centralizando toda a parte operacional do escritório em sua matriz em Goiânia, conta com filiais em Brasilia-DF, Belo Horizonte-MG, São Paulo-SP, Rio de Janeiro-RJ e Joao Pessoa-PB.
-            </span>
+              O escritório Valdéris Moüra & Carvalho Advogados foi fundado no final de 2023, com a junção de dois perfis totalmente diferentes, com o intuito de prestar uma advocacia de excelência. O escritório possui a sua matriz em Goiânia-GO, e também conta com filais em Brasilia-DF, Belo Horizonte-MG, São Paulo-SP, Rio de Janeiro-RJ e João Pessoa-PB.            </span>
           </div>
       </AnimatedComponent>
     </div>
