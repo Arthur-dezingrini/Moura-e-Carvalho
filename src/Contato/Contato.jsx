@@ -12,9 +12,9 @@ const Contato = () => {
     const Contatos = [
         {location: 'Brasilia/DF', phone: null, endereço: 'Brasília - Centro Empresarial Varig, Setor Comercial Norte, 12º andar, Quadra 4, Bloco B, 100, Asa Norte 70, Brasília - DF, 70714-900'},
         {location: 'Belo Horizonte/MG', phone: '(31) 9 7252-3131', endereço: 'Belo Horizonte - R. Paraíba, 550 - 8º Ed. Renaissance Work Center - Savassi, Belo Horizonte -   MG, 30130-140'},
-        {location: 'São Paulo/SP', phone: '(31) 9 7252-3131', endereço: 'Belo Horizonte - R. Paraíba, 550 - 8º Ed. Renaissance Work Center - Savassi, Belo Horizonte -   MG, 30130-140'},
-        {location: 'Rio De Janeiro/RJ', phone: '(31) 9 7252-3131', endereço: 'Belo Horizonte - R. Paraíba, 550 - 8º Ed. Renaissance Work Center - Savassi, Belo Horizonte -   MG, 30130-140'},
-        {location: 'João Pessoa/PB', phone: '(31) 9 7252-3131', endereço: 'Belo Horizonte - R. Paraíba, 550 - 8º Ed. Renaissance Work Center - Savassi, Belo Horizonte -   MG, 30130-140'},
+        {location: 'São Paulo/SP', phone: '(31) 9 7252-3131', endereço: 'São Paulo - Av. Pres. Juscelino Kubitschek, 1455 - 4° Andar - Vila Nova Conceição, São Paulo - SP, 04543-011'},
+        {location: 'Rio De Janeiro/RJ', phone: '(31) 9 7252-3131', endereço: 'Rio De Janeiro - Rua Lauro Müller, 116 - 32° Andar - Shopping Rio Sul, Botafogo, Rio De Janeiro - RJ, 22290-160'},
+        {location: 'João Pessoa/PB', phone: '(31) 9 7252-3131', endereço: 'João Pessoa - Rua Maria das Dores Souza 81, João Pessoa, Paraíba - 58046-095'},
     ]
 
     
